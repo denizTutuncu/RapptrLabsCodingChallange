@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimationViewController">
+            <connections>
+                <outlet property="fadeButton" destination="R4X-eb-ZnV" id="eNB-WG-Nyl"/>
+                <outlet property="logoImageView" destination="5DT-RY-uzd" id="H2U-pp-xC4"/>
+                <outlet property="secondImaegView" destination="Ae5-Bp-gvd" id="mvg-lk-kjo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwZ-ZH-ony">
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5DT-RY-uzd" userLabel="Logo Image">
+                            <rect key="frame" x="32" y="142.33333333333334" width="364" height="363.66666666666663"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="5DT-RY-uzd" secondAttribute="height" multiplier="1:1" id="tYa-Fc-zRi"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ae5-Bp-gvd">
+                            <rect key="frame" x="107" y="217" width="214" height="214"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Ae5-Bp-gvd" secondAttribute="height" multiplier="1:1" id="yNf-QK-vJT"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4X-eb-ZnV">
+                            <rect key="frame" x="30" y="816" width="368" height="55"/>
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="EP9-12-yBK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <state key="normal" title="(Button)">
+                                <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressFade:" destination="-1" eventType="touchUpInside" id="9GZ-O4-LtL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Ae5-Bp-gvd" firstAttribute="width" secondItem="uwZ-ZH-ony" secondAttribute="width" multiplier="0.5" id="8fl-RC-ECd"/>
+                        <constraint firstItem="5DT-RY-uzd" firstAttribute="centerY" secondItem="uwZ-ZH-ony" secondAttribute="centerY" multiplier="0.7" id="EU7-92-JPU"/>
+                        <constraint firstItem="Ae5-Bp-gvd" firstAttribute="centerY" secondItem="uwZ-ZH-ony" secondAttribute="centerY" multiplier="0.7" id="alc-7C-Rmp"/>
+                        <constraint firstItem="R4X-eb-ZnV" firstAttribute="leading" secondItem="uwZ-ZH-ony" secondAttribute="leading" constant="30" id="beH-49-gA4"/>
+                        <constraint firstAttribute="bottom" secondItem="R4X-eb-ZnV" secondAttribute="bottom" constant="55" id="csb-c8-MM0"/>
+                        <constraint firstItem="5DT-RY-uzd" firstAttribute="centerX" secondItem="uwZ-ZH-ony" secondAttribute="centerX" id="glF-wF-O9v"/>
+                        <constraint firstAttribute="trailing" secondItem="R4X-eb-ZnV" secondAttribute="trailing" constant="30" id="jtq-uk-9LQ"/>
+                        <constraint firstItem="5DT-RY-uzd" firstAttribute="width" secondItem="uwZ-ZH-ony" secondAttribute="width" multiplier="0.85" id="lBG-Hk-3TE"/>
+                        <constraint firstItem="Ae5-Bp-gvd" firstAttribute="centerX" secondItem="uwZ-ZH-ony" secondAttribute="centerX" id="nTA-bY-6Ux"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uwZ-ZH-ony" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1fh-Ou-Ti4"/>
+                <constraint firstItem="uwZ-ZH-ony" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="2MW-JS-Sa7"/>
+                <constraint firstItem="uwZ-ZH-ony" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LrS-vI-Neg"/>
+                <constraint firstItem="uwZ-ZH-ony" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="ccZ-kL-Vwr"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

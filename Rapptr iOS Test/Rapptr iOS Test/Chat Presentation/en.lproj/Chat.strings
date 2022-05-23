@@ -1,0 +1,9 @@
+/* 
+  Chat.strings
+  Rapptr iOS Test
+
+  Created by Deniz Tutuncu on 5/20/22.
+  
+*/
+"CHAT_VIEW_TITLE" = "Chat";
+"CHAT_VIEW_CONNECTION_ERROR" = "Couldn't connect to server";

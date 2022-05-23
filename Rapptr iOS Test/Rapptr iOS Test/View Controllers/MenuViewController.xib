@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="Rapptr_iOS_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="animationButton" destination="9uL-ib-Ayk" id="ldi-Bd-aNe"/>
+                <outlet property="chatButton" destination="4Fa-5D-jYS" id="WQf-Sy-Tse"/>
+                <outlet property="loginButton" destination="6JX-Lv-AOm" id="IBa-KL-U4C"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_home_menu" translatesAutoresizingMaskIntoConstraints="NO" id="aJW-VN-8g5">
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="JHg-aA-3PJ">
+                    <rect key="frame" x="30" y="356.66666666666669" width="368" height="213.00000000000006"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="w5C-wA-wdn">
+                            <rect key="frame" x="0.0" y="0.0" width="368" height="55"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvY-5u-JFp">
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="55"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chat" translatesAutoresizingMaskIntoConstraints="NO" id="WGl-ae-ptY">
+                                            <rect key="frame" x="22" y="0.0" width="26" height="55"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="WGl-ae-ptY" secondAttribute="trailing" id="A0Q-x4-64c"/>
+                                        <constraint firstItem="WGl-ae-ptY" firstAttribute="top" secondItem="cvY-5u-JFp" secondAttribute="top" id="PUh-sR-fAC"/>
+                                        <constraint firstAttribute="width" constant="48" id="ROg-NP-ifB"/>
+                                        <constraint firstItem="WGl-ae-ptY" firstAttribute="leading" secondItem="cvY-5u-JFp" secondAttribute="leading" constant="22" id="h8L-mg-t00"/>
+                                        <constraint firstAttribute="bottom" secondItem="WGl-ae-ptY" secondAttribute="bottom" id="p8b-Sn-1jw"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fa-5D-jYS" userLabel="UIButton">
+                                    <rect key="frame" x="64" y="0.0" width="304" height="55"/>
+                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <state key="normal" title="CHAT">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didPressChatButton:" destination="-1" eventType="touchUpInside" id="vKS-9T-LMp"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="YCY-6g-anl"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="F0f-X5-kOB">
+                            <rect key="frame" x="0.0" y="79" width="368" height="55"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v55-HE-31W">
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="55"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_login" translatesAutoresizingMaskIntoConstraints="NO" id="Vmn-qp-Fxi">
+                                            <rect key="frame" x="22" y="0.0" width="26" height="55"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="Vmn-qp-Fxi" firstAttribute="leading" secondItem="v55-HE-31W" secondAttribute="leading" constant="22" id="Gxa-Dd-vb7"/>
+                                        <constraint firstAttribute="width" constant="48" id="IyS-bB-OIm"/>
+                                        <constraint firstItem="Vmn-qp-Fxi" firstAttribute="top" secondItem="v55-HE-31W" secondAttribute="top" id="VAo-CU-JKZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vmn-qp-Fxi" secondAttribute="trailing" id="YuQ-BB-xZo"/>
+                                        <constraint firstAttribute="bottom" secondItem="Vmn-qp-Fxi" secondAttribute="bottom" id="gaB-L6-mmQ"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JX-Lv-AOm" userLabel="UIButton">
+                                    <rect key="frame" x="64" y="0.0" width="304" height="55"/>
+                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <state key="normal" title="LOGIN">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didPressLoginButton:" destination="-1" eventType="touchUpInside" id="vMe-dG-aNn"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="00T-Po-6Dm"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JFV-8h-Elr">
+                            <rect key="frame" x="0.0" y="157.99999999999994" width="368" height="55"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vbs-wA-8fZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="55"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_animation" translatesAutoresizingMaskIntoConstraints="NO" id="drj-9K-EQM">
+                                            <rect key="frame" x="22" y="0.0" width="26" height="55"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="drj-9K-EQM" secondAttribute="trailing" id="32e-vI-quy"/>
+                                        <constraint firstAttribute="bottom" secondItem="drj-9K-EQM" secondAttribute="bottom" id="3mI-Zr-9oj"/>
+                                        <constraint firstItem="drj-9K-EQM" firstAttribute="top" secondItem="Vbs-wA-8fZ" secondAttribute="top" id="hJj-Jd-G26"/>
+                                        <constraint firstAttribute="width" constant="48" id="sjl-1B-HTG"/>
+                                        <constraint firstItem="drj-9K-EQM" firstAttribute="leading" secondItem="Vbs-wA-8fZ" secondAttribute="leading" constant="22" id="uLM-zR-6O8"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uL-ib-Ayk" userLabel="UIButton">
+                                    <rect key="frame" x="64" y="0.0" width="304" height="55"/>
+                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <state key="normal" title="ANIMATION">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didPressAnimationButton:" destination="-1" eventType="touchUpInside" id="J6O-uG-LwS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="cPf-8J-rEX"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JHg-aA-3PJ" firstAttribute="width" secondItem="aJW-VN-8g5" secondAttribute="width" constant="-60" id="0od-Bw-8GB"/>
+                <constraint firstItem="aJW-VN-8g5" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="GDe-9b-cxA"/>
+                <constraint firstItem="aJW-VN-8g5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="H08-Dv-DHQ"/>
+                <constraint firstItem="JHg-aA-3PJ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="bq8-V1-9UX"/>
+                <constraint firstItem="aJW-VN-8g5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gFE-pz-kTm"/>
+                <constraint firstItem="JHg-aA-3PJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="txh-7e-OVS"/>
+                <constraint firstItem="aJW-VN-8g5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="xkE-2p-KJN"/>
+            </constraints>
+            <point key="canvasLocation" x="552.17391304347825" y="313.39285714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_home_menu" width="375" height="667"/>
+        <image name="ic_animation" width="23" height="24"/>
+        <image name="ic_chat" width="24" height="24"/>
+        <image name="ic_login" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
